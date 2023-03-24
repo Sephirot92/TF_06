@@ -13,5 +13,7 @@ export class Worker extends Person {
         return this.jobPosition;
     }
 
-
+    public doWork() {
+        console.log("This is " + this.getName() + " my job is " + this.jobPosition + "and i\'m working now." );
+    }
 }
