@@ -1,7 +1,14 @@
-import {Person} from "../lib/Person";
-
-let person1 : Person = new Person("Jan", "93042500973");
-console.log(`Person 1 name is ${person1.getName()} and person gender is ${person1.getGender()} and person age is ${person1.getAge()}`);
-
-let person2 : Person = new Person("Anna", "11213000863");
-console.log(`Person 2 name is ${person2.getName()} and person gender is ${person2.getGender()} and person age is ${person2.getAge()}`);
+import { Person } from "../lib/Person";
+let kowalski : Person = new Person("Jan", "Kowalski", "84011201858");
+console.log("\nSzczegóły Kowalski:");
+console.log("isAdult=" + kowalski.isAdult);
+console.log("gender=" + kowalski.getGender());
+console.log("getAge=" + kowalski.getAge());
+console.log(kowalski.details());
+console.log("\nSzczegóły Nowak:");
+let nowak : Person = new Person("Anna", "Nowak", "12250401684");
+nowak.setCity("Szczecin");
+nowak.setStreet("Żołnierska 53");
+nowak.setZipCode("71-210");
+console.log("isAdult=" + nowak.isAdult);
+console.log(nowak.details());
